@@ -9,7 +9,7 @@ This app recommends 10 tracks based on your favorite songs.
 
 tracks = pd.read_csv('data.csv')
 
-popularity_val = st.slider('Slide to adjust track popularity', min_value=0, max_value=100)
+popularity_val = st.slider('Slide to adjust track popularity', min_value=0, max_value=70)
 
 tracks = tracks[tracks.popularity > popularity_val]
 
